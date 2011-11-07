@@ -1,0 +1,4 @@
+server: false
+auto: false
+server_port: 8080 
+markdown: rdiscount
