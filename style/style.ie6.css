@@ -1,0 +1,12 @@
+
+#menu-header { position: relative; top: 62px; list-style-type: none; float: right; font-size: 18px; font-weight: bold; margin: 0; padding: 0; }
+
+#menu-header li { float: left; display: block; height: 32px; padding: 0; margin-left: 20px; }
+
+#menu-header li a, #menu-header li a:visited { float: left; display: block; height: 32px; padding-bottom: 17px; color: #666666; }
+
+#menu-header li a:hover, #menu-header li a:active { float: left; display: block; color: #FF3300; background-image: url('images/dotted-menu-hover.png');  background-repeat: repeat-x; }
+
+#header #menu-header li.current_page_item a { color: #FF3300; background-image: url('images/dotted-menu-hover.png');  background-repeat: repeat-x; }
+
+#footer #menu-footer li.current_page_item a { text-decoration: none; color: #FF3300; background-image: url('images/dotted-menu-hover.png');  background-repeat: repeat-x; }

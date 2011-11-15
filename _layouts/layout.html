@@ -1,16 +1,87 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="" />
+ 	<meta name="robots" content="all,follow" />
+
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="author" content="Your Name" />
-		<title>{{ page.title }}</title>
+		<meta name="author" content="Timothy Clare" />
+		<title>{{ page.title }} - Timothy Clare</title>
+
+		<style type="text/css">
+    		<!--
+    		@import url("/style/style.css");
+    		-->
+		</style>
 	</head>
 	<body>
-		<header>
-			<h1><a href="/">timothyclare.me</a></h1>
-		</header>
-		<section>
-			{{ content }}
-		</section>
+		<div id="container">   
+  			<div id="header">
+        		<h1>
+  					<a href="/">
+    					Timothy Clare
+  					</a>
+				</h1>
+			
+				<ul id="menu-header">
+					{% if page.title == 'Work' %}
+					<li class="current_page_item">
+	 					<a href="/work.html"><span>Work</span></a>
+					</li>
+          			{% else %}
+					<li class="page_item">
+	 					<a href="/work.html"><span>Work</span></a>
+					</li>
+					{% endif %}
+        		</ul>
+	  		</div>
+  	
+  			<span class="clearer"></span>
+  			
+  			<h2 class="description">Preaching technical sermons</h2>
+
+    		<div id="left-wrapper">
+	    		<div id="content">
+					{{ content }}
+	    		</div>
+
+	    		<div id="sidebar">
+		    		<ul>
+						<li>
+							<form method="get" id="search_form" action="/">
+								<div class="search_input_div">
+									<input type="text" name="query" class="search_input" value="" />
+								</div>
+								
+								<input type="hidden" name="jsp" value="Searchresult" />
+								<input type="submit" class="search_button" value="search" />
+				
+							</form>
+						</li>
+				
+					   	<li>
+							<h2><span class="sidebar-h2">Social Networking</span></h2>
+							<ul>
+								<li>
+									<a href="http://twitter.com">Twitter</a>
+								</li>
+							</ul>
+						</li>
+		   			</ul>
+				</div>
+			</div>
+	    
+			<div id="footer">
+				<ul id="menu-footer">
+      				Powered by <a href="http://www.jease.org/">Jease</a>
+  				</ul>
+  
+  				<p id="menu-footer-right">
+					<span class="minim">minim</span><span class="ahl">ahl</span> by <a href="http://www.ahlera.com">Ahlera</a>
+				</p>
+    		</div>
+		</div>
 	</body>
 </html>
